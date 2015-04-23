@@ -9,6 +9,10 @@ describe('change_returned path', {:type=> :feature}) do
     click_button('Change, please!')
     expect(page).to have_content("You have 1 quarters, 2 dimes, 0 nickels, and 4 pennies.")
   end
-
-
+  it('processes a very large input and returns correct change') do
+    visit('/')
+    fill_in('number', :with=> 6954)
+    click_button('Change, please!')
+    expect(page).to have_content("You have 278 quarters, 0 dimes, 0 nickels, and 4 pennies.")
+  end
 end
