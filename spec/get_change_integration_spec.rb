@@ -1,6 +1,6 @@
 require('capybara/rspec')
 require('./app')
-Capybara.app = Sinatra:Application
+Capybara.app = Sinatra::Application
 
 describe('change_returned path', {:type=> :feature}) do
   it('processes the user entry and returns returned_change page with denominations') do

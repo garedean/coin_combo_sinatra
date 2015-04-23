@@ -27,7 +27,7 @@ class Fixnum
       end
     # end
 
-    returned_coins = "You have #{quarter_count} quarters, #{dime_count} dimes, #{nickel_count} nickels, and #{penny_count} pennies."
+    "You have #{quarter_count} quarters, #{dime_count} dimes, #{nickel_count} nickels, and #{penny_count} pennies."
 
   end
 end
